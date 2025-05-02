@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" / >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЖК ORDA TOWN</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#description">О проекте</a></li>
+          <li><a href="#location">Локация</a></li>
+          <li><a href="#office">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="overlay">
+          <h1>Жилой Комплекс</h1>
+          <h2>ORDA TOWN</h2>
+          <p>Добро пожаловать домой.</p>
+          <div class="scroll-down" onclick="scrollToSection('description')">
+            <span>&#x25BC;</span>
+          </div>
+        </div>
+      </section>
+      <!-- Description Section -->
+      <section id="description" class="description">
+        <div class="content">
+          <h2 data-animate="fade-in">ORDA TOWN</h2>
+          <p data-animate="fade-in">
+            это гармония ритма жизни города и природной тишины
+          </p>
+          <div class="divider" data-animate="fade-in"></div>
+        </div>
+      </section>
+      <!-- Advantages Section -->
+      <section id="advantages" class="advantages">
+        <h2 data-animate="fade-in">Преимущества проекта</h2>
+        <p data-animate="fade-in">
+          Наша цель — предоставить Вам комфортное жилье по доступной цене
+        </p>
+        <div class="advantages-grid">
+          <div class="advantage-item" data-animate="fade-in">
+            <div class="icon">
+              <img src="/images/location.png" alt="Расположение" />
+            </div>
+            <p>В перспективном районе</p>
+          </div>
+          <div class="advantage-item" data-animate="fade-in">
+            <div class="icon">
+              <img src="/images/magaz.png" alt="Инфраструктура" />
+            </div>
+            <p>Хорошая инфраструктура</p>
+          </div>
+          <div class="advantage-item" data-animate="fade-in">
+            <div class="icon">
+              <img src="/images/listok.png" alt="Набережная" />
+            </div>
+            <p>Собственная набережная у реки</p>
+          </div>
+          <div class="advantage-item" data-animate="fade-in">
+            <div class="icon">
+              <img src="/images/zvyk.jpg" alt="Монолитные стены" />
+            </div>
+            <p>Монолитные стены</p>
+          </div>
+          <div class="advantage-item" data-animate="fade-in">
+            <div class="icon">
+              <img src="/images/kolog.png" alt="Экологичные материалы" />
+            </div>
+            <p>Дом из экологичных материалов</p>
+          </div>
+          <div class="advantage-item" data-animate="fade-in">
+            <div class="icon">
+              <img src="/images/planirovka.png" alt="Удобные планировки" />
+            </div>
+            <p>Удобные планировки</p>
+          </div>
+        </div>
+      </section>
+      <!-- Slider Section -->
+      <section id="slider" class="slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="/images/жк1-pica.png" alt="Фото 1" />
+          </div>
+          <div class="slide">
+            <img src="/images/жк2-pica.png" alt="Фото 2" />
+          </div>
+          <div class="slide">
+            <img src="/images/жк3-pica.png" alt="Фото 3" />
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <!-- Infrastructure Section -->
+      <section id="infrastructure" class="infrastructure">
+        <div class="container">
+          <h2>Инфраструктура в двух шагах</h2>
+          <p>Квартиры находятся в перспективном развивающемся районе города</p>
+          <div class="infra-content">
+            <div class="infra-block">
+              <div class="infra-text">
+                <h3>Будет метро</h3>
+                <p>
+                  По генплану утверждена новая локация метро — всего в 3 минутах
+                  ходьбы от нашего ЖК.
+                </p>
+              </div>
+              <div class="infra-image">
+                <img src="/images/метро.jpg" alt="Будет метро" />
+              </div>
+            </div>
+            <div class="infra-block reverse">
+              <div class="infra-text">
+                <h3>Детские площадки на территории комплекса</h3>
+                <p>
+                  450 квадратных метров игровой территории для детей. И уютные
+                  места для теплого общения в хорошей компании.
+                </p>
+              </div>
+              <div class="infra-image">
+                <img
+                  src="/images/детская площадка.jpg"
+                  alt="Детские площадки"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="infra-block">
+            <div class="infra-text">
+              <h3>Все рядом</h3>
+              <p>
+                Все рядом Рынки, школы, медицинские центры, места общепита и
+                транспортные остановки - все в шаговой доступности
+              </p>
+            </div>
+            <div class="infra-image">
+              <img src="/images/все рядом.jpg" alt="Все рядом" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Location Section -->
+      <section id="location" class="location">
+        <div class="map-container">
+          <div class="map-info">
+            <h3>ORDA TOWN</h3>
+            <p>Улица Улугбека, 1-й микрорайон</p>
+            <p>Дома возводятся вдоль дороги на улице Улугбека</p>
+          </div>
+
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=76.853756%2C43.228979&z=16&pt=76.853756,43.228979,pm2rdl"
+            width="100%"
+            height="500"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
+      </section>
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <div class="image-grid">
+            <div class="image-item">
+              <img src="/images/fotka1.jpeg" alt="Изображение 1" />
+            </div>
+            <div class="image-item">
+              <img src="/images/fotka2.jpg" alt="Изображение 2" />
+            </div>
+            <div class="image-item">
+              <img src="/images/fotka3.jpeg" alt="Изображение 3" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="invest-stroy" class="invest-stroy">
+        <div class="container">
+          <div class="invest-logo">
+            <img src="/images/investstroy.png" alt="Investment Stroy" />
+          </div>
+        </div>
+      </section>
+      <!-- Abour-company Section -->
+      <section id="about-company" class="about-company">
+        <div class="container">
+          <h2>О компании-застройщике</h2>
+          <p>
+            Компания <strong>INVESTMENT STROY</strong> — на рынке с 2012 года.
+            <br />
+            Начиная с малых проектов, компания с каждым разом бралась за более
+            сложные работы и зарекомендовала себя как надежного застройщика. За
+            плечами нашей команды сотрудничество с QazaqStroy, а также успешно
+            завершенные работы по самым разным объектам: от многопрофильных
+            образовательных центров и городских коммуникаций до элитных вилл в
+            премиальных районах.
+          </p>
+          <p>
+            <strong
+              >Мы знаем как строить на века и будем рады строить для Вас
+            </strong>
+          </p>
+        </div>
+      </section>
+      <!-- Telephone Section -->
+      <section id="call-request" class="call-request">
+        <div class="container">
+          <form id="call-form" class="call-form" action="#" method="post">
+            <div class="form-group">
+              <h2>Заказать звонок</h2>
+              <p>Заполните форму, и мы перезвоним Вам</p>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" />
+              <span class="error-message" id="name-error">
+                Обязательное поле
+              </span>
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Ваш телефон"
+              />
+              <span class="error-message" id="phone-error">
+                Обязательное поле
+              </span>
+            </div>
+            <div class="error-summary" id="error-summary">
+              Пожалуйста, заполните все обязательные поля
+            </div>
+            <button type="submit" class="submit-button">Заказать звонок</button>
+            <p class="privacy-policy">
+              <a href="https://ordatown.kz/privacy"
+                >Политика конфиденциальности</a
+              >
+            </p>
+          </form>
+        </div>
+      </section>
+      <!-- Office Section -->
+      <section id="office" class="office">
+        <div class="container">
+          <h2>ОФИС</h2>
+          <p class="address">г. Алматы, улица Улугбека 45 к 13</p>
+          <div class="working-hours">
+            <p>Время работы:</p>
+            <p>Пн-Пт: с 10:00 до 18:00</p>
+            <p>Суббота: с 10:00 до 15:00</p>
+            <p>Воскресенье: выходной</p>
+          </div>
+          <div class="contact-info">
+            <p>Наши телефоны:</p>
+            <p>+7 775 977 79 97</p>
+            <p>+7 707 363 83 76</p>
+            <p>+7 707 363 83 94</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
