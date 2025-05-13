@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея - Просмотр</title>
+    <link rel="stylesheet" href="gallery-view.css" />
+  </head>
+  <body>
+    <div class="gallery-slider">
+      <button class="close-button" onclick="closeGallery()">×</button>
+      <div class="slider-container">
+        <div class="slide">
+          <img src="/images/fotka1.jpeg" alt="Изображение 1" />
+        </div>
+        <div class="slide">
+          <img src="/images/fotka2.jpg" alt="Изображение 2" />
+        </div>
+        <div class="slide">
+          <img src="/images/fotka3.jpeg" alt="Изображение 3" />
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <script src="gallery-view.js"></script>
+  </body>
+</html>
